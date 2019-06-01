@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QlGiayDep</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="/assets/customcss.css">
+    <link rel="stylesheet" href="/assets/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/customcss.css">
+    <link rel="stylesheet" href="/assets/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <header>
+		
+			
+		<div id="header-bottom-wrap">
+			<!-- HEADER BOTTOM -->
+			<section id="header-bottom">
+				<!-- LOGO -->
+				<div class="logo-container">
+					<a href="/">
+						<figure class="logo">
+            <%=image_tag("logo.png")%>
+							<figcaption>Westeros</figcaption>
+						</figure>
+					</a>
+				</div>
+				<!-- /LOGO -->
+				<form class="westeros-form">
+					<label for="categories" class="select-block">
+						<select name="categories" id="categories">
+							<option value="0">Tất cả</option>
+							<option value="1">Sneakers</option>
+							<option value="2"> Ballet flats</option>
+							<option value="3">Mules</option>
+							<option value="4">Spool</option>	
+						</select>
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow select-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+					</label>
+					<input type="text" name="search" id="search" placeholder="Search Our Catalog...">
+					<input type="image" src="/assets/search-icon.png" alt="search-icon">
+				</form>
+
+				<!-- WESTEROS DROPDOWN CONTAINER-->
+				<div class="westeros-dropdown-container">
+					<!-- CART CONTROL -->
+					<div class="cart-control westeros-dropdown-control">
+						<!-- SVG ORDER BOX -->
+						<svg class="svg-order-box">
+							<use xlink:href="#svg-order-box"></use>
+						</svg>
+						<!-- /SVG ORDER BOX -->
+
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow select-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+						<h6>Your Total Order</h6>
+						<p class="cart-content-short">(3)</p>
+						<p class="cart-content-long">3 item (s) -</p>
+						<p class="highlighted">$235.50</p>
+					</div>
+					<!-- /CART CONTROL -->
+
+					<!-- CART -->
+					<ul class="cart westeros-dropdown">
+						<!-- CART ITEM -->
+						<li class="item clearfix">
+							<div class="picture">
+								<figure class="liquid">
+									<img src="/assets/02.png" alt="product1">
+								</figure>
+							</div>
+							<div class="description">
+								<p class="highlighted category">T-Shirts</p>
+								<h6>The Crazy Bunny</h6>
+							</div>
+							<div class="quantity">
+								<h6>1</h6>
+							</div>
+							<div class="price">
+								<p class="highlighted">$86.00</p>
+							</div>
+							<img src="/assets/remove.png" alt="remove">
+						</li>
+						<!-- /CART ITEM -->
+
+						<!-- CART ITEM -->
+						<li class="item clearfix">
+							<div class="picture">
+								<figure class="liquid">
+									<img src="/assets/33.png" alt="product1">
+								</figure>
+							</div>
+							<div class="description">							
+								<p class="highlighted category">Phone Cases</p>
+								<h6>I-Ladyskull</h6>
+							</div>
+							<div class="quantity">
+								<h6>2</h6>
+							</div>
+							<div class="price">
+								<p class="highlighted">$48.00</p>
+							</div>
+							<img src="/assets/remove.png" alt="remove">
+						</li>
+						<!-- /CART ITEM -->
+
+						<!-- CART ITEM -->
+						<li class="item clearfix">
+							<div class="picture">
+								<figure class="liquid">
+									<img src="/assets/32.png" alt="product1">
+								</figure>
+							</div>
+							<div class="description">									
+								<p class="highlighted category">Custom Sneakers</p>
+								<h6>The Devil Walks</h6>
+							</div>
+							<div class="quantity">
+								<h6>2</h6>
+							</div>
+							<div class="price">
+								<p class="highlighted">$86.00</p>
+							</div>
+							<img src="/assets/remove.png" alt="remove">
+						</li>
+						<!-- /CART ITEM -->
+
+						<!-- TOTAL -->
+						<li class="total clearfix">
+							<div>
+								<h6>$220.00</h6>
+								<h6>$15.50</h6>
+								<p class="highlighted">$235.50</p>
+							</div>
+							<div>
+								<h6>Subtotal</h6>
+								<h6>Shipping</h6>
+								<h6>Total</h6>
+							</div>	
+						</li>
+						<!-- /TOTAL -->
+
+						<!-- ORDER -->
+						<li class="order clearfix">
+							<a href="checkout.html" class="button">Checkout</a>
+							<a href="cart.html" class="button secondary">Go to Cart</a>
+						</li>
+						<!-- /ORDER -->
+					</ul>
+					<!-- /CART -->
+				</div>
+				<!-- /WESTEROS DROPDOWN CONTAINER -->
+			</section>
+			<!-- /HEADER BOTTOM -->
+		</div>
+
+		<!-- WESTEROS SEPARATOR -->
+		<ul class="westeros-separator small">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- /WESTEROS SEPARATOR -->
+	</header>
+  <!-- MAIN MENU -->
+	<nav id="main-menu">
+		<img class="pull-nav" src="/assets/pull-icon.png" alt="pull-icon">
+		<ul>
+			<li><a href="/">Trang chủ</a></li>
+			<li><a href="#">Nam</a></li>
+			<li><a href="#">Nữ</a></li>
+			<li><a href="#">Trẻ em</a></li>
+			<li><a href="#">Liên hệ</a></li>
+		</ul>
+	</nav>
+	<!-- /MAIN MENU -->
+  </head>
+
+  <body>
+    <%= yield %>
+    <!-- FOOTER -->
+	<footer>
+		<div id="footer-top-wrap">
+			<section id="footer-top" class="clearfix">
+				<article>
+					<h6>About Westeros</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur  latid adipisicing elit, sed do eiusmod tem edne 
+					incididunt ut labore.</p>
+					<!-- LOGO -->
+					<a href="/">
+						<figure class="logo">
+							<img src="/assets/logo-footer.png" alt="logo">
+							<figcaption>Westeros</figcaption>
+						</figure>
+					</a>
+					<!-- /LOGO -->
+
+					<!-- CONTACT INFO -->
+					<ul class="contact-info">
+						<li class="address">
+							<!-- SVG PIN -->
+							<svg class="svg-pin">
+								<use xlink:href="#svg-pin"></use>	
+							</svg>
+							<!-- /SVG PIN -->
+							<p>34th Street 1235, New York, NY</p>
+						</li>
+						<li class="phone">
+							<!-- SVG PHONE -->
+							<svg class="svg-phone">
+								<use xlink:href="#svg-phone"></use>	
+							</svg>
+							<!-- /SVG PHONE -->
+							<p>(044) 555 123 1234/35</p>
+						</li>
+						<li class="email">
+							<!-- SVG ENVELOPE -->
+							<svg class="svg-envelope">
+								<use xlink:href="#svg-envelope"></use>	
+							</svg>
+							<!-- /SVG ENVELOPE -->
+							<p><a href="mailto:questions@westeroscc.com">questions@westeroscc.com</a></p>
+						</li>
+					</ul>
+					<!-- /CONTACT INFO -->
+
+					<!-- PAYMENT METHODS -->
+					<ul class="payment-methods">
+						<!-- METHOD -->
+						<li>
+							<img src="/assets/method1.jpg" alt="method1">
+						</li>
+						<!-- /METHOD -->
+
+						<!-- METHOD -->
+						<li>
+							<img src="/assets/method2.jpg" alt="method2">
+						</li>
+						<!-- /METHOD -->
+
+						<!-- METHOD -->
+						<li>
+							<img src="/assets/method3.jpg" alt="method3">
+						</li>
+						<!-- /METHOD -->
+
+						<!-- METHOD -->
+						<li>
+							<img src="/assets/method4.jpg" alt="method4">
+						</li>
+						<!-- /METHOD -->
+
+						<!-- METHOD -->
+						<li>
+							<img src="/assets/method5.jpg" alt="method5">
+						</li>
+						<!-- /METHOD -->
+
+						<!-- METHOD -->
+						<li>
+							<img src="/assets/method6.jpg" alt="method6">
+						</li>
+						<!-- /METHOD -->
+					</ul>
+					<!-- /PAYMENT METHODS -->
+				</article>
+
+				<article>
+					<h6>Site Information</h6>
+					<nav id="footer-menu">
+						<ul>
+							<li>
+								<a href="/">Trang chủ</a>
+								<!-- SVG ARROW -->
+								<svg class="svg-arrow">
+									<use xlink:href="#svg-arrow"></use>
+								</svg>
+								<!-- /SVG ARROW -->
+							</li>
+							<li>
+								<a href="profile.html">My Account</a>
+								<!-- SVG ARROW -->
+								<svg class="svg-arrow">
+									<use xlink:href="#svg-arrow"></use>
+								</svg>
+								<!-- /SVG ARROW -->
+							</li>
+							<li>
+								<a href="cart.html">My Cart</a>
+								<!-- SVG ARROW -->
+								<svg class="svg-arrow">
+									<use xlink:href="#svg-arrow"></use>
+								</svg>
+								<!-- /SVG ARROW -->
+							</li>
+							<li>
+								<a href="#">New Arrivals</a>
+								<!-- SVG ARROW -->
+								<svg class="svg-arrow">
+									<use xlink:href="#svg-arrow"></use>
+								</svg>
+								<!-- /SVG ARROW -->
+							</li>
+							<li>
+								<a href="blog.html">Our Blog</a>
+								<!-- SVG ARROW -->
+								<svg class="svg-arrow">
+									<use xlink:href="#svg-arrow"></use>
+								</svg>
+								<!-- /SVG ARROW -->
+							</li>
+							<li>
+								<a href="#">How to Shop</a>
+								<!-- SVG ARROW -->
+								<svg class="svg-arrow">
+									<use xlink:href="#svg-arrow"></use>
+								</svg>
+								<!-- /SVG ARROW -->
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+								<!-- SVG ARROW -->
+								<svg class="svg-arrow">
+									<use xlink:href="#svg-arrow"></use>
+								</svg>
+								<!-- /SVG ARROW -->
+							</li>
+						</ul>
+					</nav>
+				</article>
+
+				<article>
+					<h6>Featured Products</h6>
+					<!-- PRODUCT PREVIEW -->
+					<ul class="product-preview">
+						<li>
+							<a href="full-view.html">
+								<figure class="liquid">
+									<img src="/assets/giay-nam1.jpg" alt="product1">
+								</figure>
+							</a>
+							<a href="women-shop.html"><p class="highlighted category">T-Shirts</p></a>
+							<a href="full-view.html"><h6>Crazy Bunny</h6></a>
+							<!-- RATING -->
+							<ul class="rating">
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li>
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+							</ul>
+							<!-- /RATING -->			
+							<p class="highlighted current">$86.00</p>
+						</li>
+
+						<li>
+							<a href="full-view.html">
+								<figure class="liquid">
+									<img src="/assets/giay-nam1.jpg" alt="product2">
+								</figure>
+							</a>
+							<a href="women-shop.html"><p class="highlighted category">T-Shirts</p></a>
+							<a href="full-view.html"><h6>Happy Doughnut</h6></a>
+							<!-- RATING -->
+							<ul class="rating">
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li>
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+							</ul>
+							<!-- /RATING -->			
+							<p class="highlighted current">$49.00</p>
+							<p class="highlighted previous">$61.25</p>
+						</li>
+
+						<li>
+							<a href="full-view.html">
+								<figure class="liquid">
+									<img src="/assets/32.png" alt="product3">
+								</figure>
+							</a>
+							<a href="women-shop.html"><p class="highlighted category">Custom Sneakers</p></a>
+							<a href="full-view.html"><h6>The Devil Walks</h6></a>
+							<!-- RATING -->
+							<ul class="rating">
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li>
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+							</ul>
+							<!-- /RATING -->			
+							<p class="highlighted current">$43.00</p>
+						</li>
+					</ul>
+					<!-- /PRODUCT PREVIEW -->
+				</article>
+
+				<article>
+					<h6>Latest Products</h6>
+					<!-- PRODUCT PREVIEW -->
+					<ul class="product-preview">
+						<li>
+							<a href="full-view.html">
+								<figure class="liquid">
+									<img src="/assets/31.png" alt="product1">
+								</figure>
+							</a>
+							<a href="men-shop.html"><p class="highlighted category">Custom Sneakers</p></a>
+							<a href="full-view.html"><h6>Crazy-R Chucks</h6></a>
+							<!-- RATING -->
+							<ul class="rating">
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li>
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+							</ul>
+							<!-- /RATING -->			
+							<p class="highlighted current">$57.00</p>
+						</li>
+
+						<li>
+							<a href="full-view.html">
+								<figure class="liquid">
+									<img src="/assets/16.png" alt="product1">
+								</figure>
+							</a>
+							<a href="men-shop.html"><p class="highlighted category">T-Shirts</p></a>
+							<a href="full-view.html"><h6>The Devil Pin 02</h6></a>
+							<!-- RATING -->
+							<ul class="rating">
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li>
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+							</ul>
+							<!-- /RATING -->			
+							<p class="highlighted current">$54.00</p>
+						</li>
+
+						<li>
+							<a href="full-view.html">
+								<figure class="liquid">
+									<img src="/assets/07.png" alt="product1">
+								</figure>
+							</a>
+							<a href="women-shop.html"><p class="highlighted category">T-Shirts</p></a>
+							<a href="full-view.html"><h6>Robo Planet</h6></a>
+							<!-- RATING -->
+							<ul class="rating">
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li class="filled">
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+								<li>
+									<!-- SVG STAR -->
+									<svg class="svg-star">
+										<use xlink:href="#svg-star"></use>
+									</svg>
+									<!-- /SVG STAR -->
+								</li>
+							</ul>
+							<!-- /RATING -->			
+							<p class="highlighted current">$105.00</p>
+						</li>
+					</ul>
+					<!-- /PRODUCT PREVIEW -->
+				</article>
+			</section>
+		</div>
+		<div id="footer-bottom-wrap">
+			<section id="footer-bottom">
+				<p><a href="/">Westeros Custom Clothing</a> Template <br> <span>|</span> All Rights Reserved 2014</p>
+				<!-- SOCIAL LINKS -->
+				<ul class="social-links">
+					<li class="fb"><a href="#"></a></li>
+					<li class="twt"><a href="#"></a></li>
+					<li class="gplus"><a href="#"></a></li>
+					<li class="db"><a href="#"></a></li>
+					<li class="rss"><a href="#"></a></li>
+					<li class="vm"><a href="#"></a></li>
+					<li class="fk"><a href="#"></a></li>
+				</ul>
+				<!-- /SOCIAL LINKS -->
+			</section>
+		</div>
+	
+    <script src="/assets/jquery-1.11.1.min.js"></script>
+<!-- XM Accordion -->
+<script src="/assets/jquery.xmaccordion.min.js"></script>
+<!-- Owl Carrousel -->
+<script src="/assets/owl.carousel.min.js"></script>
+<!-- Magnific Popup -->
+<script src="/assets/jquery.magnific-popup.min.js"></script>
+<!-- imgLiquid -->
+<script src="/assets/imgLiquid-min.js"></script>
+<!-- Header -->
+<script src="/assets/header.js"></script>
+<!-- Menu -->
+<script src="/assets/menu.js"></script>
+<!-- Home -->
+<script src="/assets/home.js"></script>
+  </body>
+</html>

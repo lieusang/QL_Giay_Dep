@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @san_pham.Id %>
+</p>
+
+<p>
+  <strong>Tensp:</strong>
+  <%= @san_pham.TenSp %>
+</p>
+
+<p>
+  <strong>Mota:</strong>
+  <%= @san_pham.MoTa %>
+</p>
+
+<p>
+  <strong>Hinhanh:</strong>
+  <%= @san_pham.HinhAnh %>
+</p>
+
+<%= link_to 'Edit', edit_san_pham_path(@san_pham) %> |
+<%= link_to 'Back', san_phams_path %>

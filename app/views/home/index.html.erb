@@ -1,0 +1,132 @@
+
+<!-- PRODUCT SHOWCASE -->
+	<div class="product-showcase-wrap">
+		<section class="product-showcase" style="margin-top: 30px;">
+			<h3 class="title">Nam</h3>
+			<!-- SLIDE CONTROLS -->
+			<ul class="slide-controls">
+				<!-- LEFT CONTROL -->
+				<li>
+					<a href="#" class="button prev">
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+					</a>
+				</li>
+				<!-- /LEFT CONTROL -->
+
+				<!-- RIGHT CONTROL -->
+				<li>
+					<a href="#" class="button next">
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+					</a>
+				</li>
+				<!-- /RIGHT CONTROL -->
+			</ul>
+			<!-- /SLIDE CONTROLS -->
+
+			<!-- COMPARE MODAL -->
+			<div id="compare-modal" class="compare-modal mfp-with-anim mfp-hide">
+				<img src="assets/compare-modal-logo.png" alt="logo">
+				<h5>The item <span>product name</span></h5>
+				<h6>Has been sucessfully added to compare</h6>
+				<div class="options">
+					<a class="button medium mfp-close">Return to store</a>
+					<a href="compare.html" class="button medium compare">Go to compare</a>
+				</div>
+			</div>
+			<!-- /COMPARE MODAL -->
+
+			<!-- PRODUCT LIST GIAY NAM -->
+			<div class="container">     
+				<div class="row">
+				<%@products_nam.each do |t|%>
+				<div class="col-sm-3">
+						<div class="card" style="width:300px">
+							<img class="card-img-top" src="assets/<%=t.hinh_anh%>" alt="Card image" style="width:100%">
+							<div class="card-body">
+								<p class="card-text"><%=t.ten_sanpham%></p>
+								<p style="font-size:30px; color:red;"> giá:<%=t.gia%> VND</p>
+								<button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+							</div>
+						</div>
+					</div>
+				<% end %>
+				</div>
+			</div>
+			
+			<!-- /PRODUCT LIST -->
+		</section>
+	</div>
+	<div class="product-showcase-wrap">
+		<section class="product-showcase" style="margin-top: 30px;">
+			<h3 class="title">Nữ</h3>
+			<!-- SLIDE CONTROLS -->
+			<ul class="slide-controls">
+				<!-- LEFT CONTROL -->
+				<li>
+					<a href="#" class="button prev">
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+					</a>
+				</li>
+				<!-- /LEFT CONTROL -->
+
+				<!-- RIGHT CONTROL -->
+				<li>
+					<a href="#" class="button next">
+						<!-- SVG ARROW -->
+						<svg class="svg-arrow">
+							<use xlink:href="#svg-arrow"></use>
+						</svg>
+						<!-- /SVG ARROW -->
+					</a>
+				</li>
+				<!-- /RIGHT CONTROL -->
+			</ul>
+			<!-- /SLIDE CONTROLS -->
+
+			<!-- COMPARE MODAL -->
+			<div id="compare-modal" class="compare-modal mfp-with-anim mfp-hide">
+				<img src="assets/compare-modal-logo.png" alt="logo">
+				<h5>The item <span>product name</span></h5>
+				<h6>Has been sucessfully added to compare</h6>
+				<div class="options">
+					<a class="button medium mfp-close">Return to store</a>
+					<a href="compare.html" class="button medium compare">Go to compare</a>
+				</div>
+			</div>
+			<!-- /COMPARE MODAL -->
+
+			<!-- PRODUCT LIST GIAY NU -->
+			<div class="container">     
+				<div class="row">
+				<%@products_nu.each do |t|%>
+				<div class="col-sm-3">
+						<div class="card" style="width:300px">
+							<img class="card-img-top" src="assets/<%=t.hinh_anh%>" alt="Card image" style="width:100%">
+							<div class="card-body">
+								<p class="card-text"><%=t.ten_sanpham%></p>
+								<p style="font-size:30px; color:red;"> giá:<%=t.gia%> VND</p>
+								<button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+							</div>
+						</div>
+					</div>
+				<% end %>
+				</div>
+			</div>
+			
+			<!-- /PRODUCT LIST -->
+		</section>
+	</div>
+	
+	<!-- /PRODUCT SHOWCASE -->

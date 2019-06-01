@@ -1,0 +1,2 @@
+class Loai < ApplicationRecord
+end

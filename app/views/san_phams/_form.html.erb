@@ -1,0 +1,37 @@
+<%= form_with(model: san_pham, local: true) do |form| %>
+  <% if san_pham.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(san_pham.errors.count, "error") %> prohibited this san_pham from being saved:</h2>
+
+      <ul>
+      <% san_pham.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Id %>
+    <%= form.number_field :Id, id: :san_pham_Id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :TenSp %>
+    <%= form.text_field :TenSp, id: :san_pham_TenSp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MoTa %>
+    <%= form.text_field :MoTa, id: :san_pham_MoTa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :HinhAnh %>
+    <%= form.text_field :HinhAnh, id: :san_pham_HinhAnh %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

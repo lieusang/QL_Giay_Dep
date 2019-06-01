@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>San Phams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Tensp</th>
+      <th>Mota</th>
+      <th>Hinhanh</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @san_phams.each do |san_pham| %>
+      <tr>
+        <td><%= san_pham.Id %></td>
+        <td><%= san_pham.TenSp %></td>
+        <td><%= san_pham.MoTa %></td>
+        <td><%= san_pham.HinhAnh %></td>
+        <td><%= link_to 'Show', san_pham %></td>
+        <td><%= link_to 'Edit', edit_san_pham_path(san_pham) %></td>
+        <td><%= link_to 'Destroy', san_pham, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New San Pham', new_san_pham_path %>

@@ -1,0 +1,2 @@
+class ChiTietSanPham < ApplicationRecord
+end
